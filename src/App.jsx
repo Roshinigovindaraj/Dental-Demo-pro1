@@ -1,19 +1,28 @@
 import './App.css'
 
-const CANVA_EMBED_URL =
-  'https://www.canva.com/design/DAHWL5bZ3oo/LO1B40JFQen3UCZxMsSGFQ/view?embed'
-
 function App() {
   return (
     <main className="canva-page">
-      <iframe
-        className="canva-embed"
-        src={CANVA_EMBED_URL}
-        title="Canva design by Jai Ramachandran"
-        loading="eager"
-        allow="fullscreen"
-        allowFullScreen
-      />
+      <div className="canva-embed-wrapper">
+        <iframe
+          loading="lazy"
+          className="canva-embed"
+          src="https://www.canva.com/design/DAHWMsC3diQ/SbrD8uJWTJabL_WCOpghwQ/view?embed"
+          title="Untitled (1024 x 1536 px) by Roshini"
+          allowFullScreen
+          allow="fullscreen"
+        />
+      </div>
+      <p className="canva-credit">
+        <a
+          href="https://www.canva.com/design/DAHWMsC3diQ/SbrD8uJWTJabL_WCOpghwQ/view?utm_content=DAHWMsC3diQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Untitled (1024 x 1536 px)
+        </a>{' '}
+        by Roshini
+      </p>
     </main>
   )
 }
