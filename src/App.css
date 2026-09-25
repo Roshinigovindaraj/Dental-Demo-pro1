@@ -1,11 +1,17 @@
 .canva-page {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
   background: #0d0e12;
+}
+
+.canva-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .canva-embed-wrapper {
@@ -35,4 +41,27 @@
 
 .canva-credit a {
   color: #1769aa;
+}
+
+@media (max-width: 700px) {
+  .canva-page {
+    justify-content: center;
+  }
+
+  .canva-content {
+    width: 100%;
+  }
+
+  .canva-embed {
+    width: 300%;
+    height: 300%;
+    transform: scale(0.333333);
+    transform-origin: top left;
+  }
+
+  .canva-credit {
+    width: 100%;
+    padding-inline: 12px;
+    text-align: center;
+  }
 }
