@@ -43,6 +43,12 @@
   color: #1769aa;
 }
 
+@media (min-width: 701px) {
+  .canva-page {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 700px) {
   .canva-page {
     justify-content: center;
@@ -52,16 +58,7 @@
     width: 100%;
   }
 
-  .canva-embed {
-    width: 300%;
-    height: 300%;
-    transform: scale(0.333333);
-    transform-origin: top left;
-  }
-
   .canva-credit {
-    width: 100%;
-    padding-inline: 12px;
-    text-align: center;
+    display: none;
   }
 }
